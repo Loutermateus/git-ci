@@ -1,0 +1,183 @@
+{
+  "uid" : "ad6e5306b87bb6f3",
+  "name" : "Get list user",
+  "fullName" : "test.test_users.TestUsers#test_user_1",
+  "historyId" : "faa03a9525f65dc8196b32974472b12b",
+  "time" : {
+    "start" : 1749296703051,
+    "stop" : 1749296704183,
+    "duration" : 1132
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: {'code': 401, 'message': 'security requirements failed: authentication failed, please set correct \"Bearer\" header'}",
+  "statusTrace" : "self = <test_users.TestUsers object at 0x7fc93c6e7dd0>\n\n    @pytest.mark.smoke\n    @allure.title(\"Get list user\")\n    def test_user_1(self):\n>       self.users_api.get_list_all_users()\n\ntest/test_users.py:26: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nservices/users/api.py:33: in get_list_all_users\n    model = self._validate_response(response, UsersListResponseModel)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <services.users.api.UsersAPI object at 0x7fc93c415340>\nresponse = <Response [401]>\nmodel = <class 'services.users.models.model_list_user.UsersListResponseModel'>\nstatus_code = 200, success = True\n\n    def _validate_response(self, response: requests.Response, model: type[BaseModel], status_code: int = 200,\n                          success: bool = True):\n        self.attach_response(response.json())\n        if success:\n>           assert response.status_code == status_code, response.json()\nE           AssertionError: {'code': 401, 'message': 'security requirements failed: authentication failed, please set correct \"Bearer\" header'}\n\nhelper/helper.py:20: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_xunit_setup_method_fixture_TestUsers",
+    "time" : {
+      "start" : 1749296703051,
+      "stop" : 1749296703051,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1749296700702,
+      "stop" : 1749296700704,
+      "duration" : 2
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: {'code': 401, 'message': 'security requirements failed: authentication failed, please set correct \"Bearer\" header'}",
+    "statusTrace" : "self = <test_users.TestUsers object at 0x7fc93c6e7dd0>\n\n    @pytest.mark.smoke\n    @allure.title(\"Get list user\")\n    def test_user_1(self):\n>       self.users_api.get_list_all_users()\n\ntest/test_users.py:26: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nservices/users/api.py:33: in get_list_all_users\n    model = self._validate_response(response, UsersListResponseModel)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <services.users.api.UsersAPI object at 0x7fc93c415340>\nresponse = <Response [401]>\nmodel = <class 'services.users.models.model_list_user.UsersListResponseModel'>\nstatus_code = 200, success = True\n\n    def _validate_response(self, response: requests.Response, model: type[BaseModel], status_code: int = 200,\n                          success: bool = True):\n        self.attach_response(response.json())\n        if success:\n>           assert response.status_code == status_code, response.json()\nE           AssertionError: {'code': 401, 'message': 'security requirements failed: authentication failed, please set correct \"Bearer\" header'}\n\nhelper/helper.py:20: AssertionError",
+    "steps" : [ {
+      "name" : "Get list users ",
+      "time" : {
+        "start" : 1749296703051,
+        "stop" : 1749296704183,
+        "duration" : 1132
+      },
+      "status" : "failed",
+      "statusMessage" : "AssertionError: {'code': 401, 'message': 'security requirements failed: authentication failed, please set correct \"Bearer\" header'}\n",
+      "statusTrace" : "  File \"/usr/local/lib/python3.12/site-packages/allure_commons/_allure.py\", line 202, in impl\n    return func(*a, **kw)\n           ^^^^^^^^^^^^^^\n  File \"/usr/workspace/services/users/api.py\", line 33, in get_list_all_users\n    model = self._validate_response(response, UsersListResponseModel)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/workspace/helper/helper.py\", line 20, in _validate_response\n    assert response.status_code == status_code, response.json()\n",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "2d8e489157cc9177",
+        "name" : "API response",
+        "source" : "2d8e489157cc9177.json",
+        "type" : "application/json",
+        "size" : 127
+      } ],
+      "parameters" : [ {
+        "name" : "offset",
+        "value" : "0"
+      }, {
+        "name" : "limit",
+        "value" : "10"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ {
+    "name" : "_xunit_setup_method_fixture_TestUsers::0",
+    "time" : {
+      "start" : 1749296704188,
+      "stop" : 1749296704188,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Test User"
+  }, {
+    "name" : "tag",
+    "value" : "smoke"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test"
+  }, {
+    "name" : "suite",
+    "value" : "test_users"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestUsers"
+  }, {
+    "name" : "host",
+    "value" : "89ba63569eb6"
+  }, {
+    "name" : "thread",
+    "value" : "7-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test.test_users"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 3,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 3
+      },
+      "items" : [ {
+        "uid" : "25a1c90f0a654980",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: {'code': 401, 'message': 'security requirements failed: authentication failed, please set correct \"Bearer\" header'}",
+        "time" : {
+          "start" : 1749296329402,
+          "stop" : 1749296330234,
+          "duration" : 832
+        }
+      }, {
+        "uid" : "f308b947676e7209",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: {'code': 401, 'message': 'security requirements failed: authentication failed, please set correct \"Bearer\" header'}",
+        "time" : {
+          "start" : 1749295717647,
+          "stop" : 1749295718499,
+          "duration" : 852
+        }
+      } ]
+    },
+    "tags" : [ "smoke" ]
+  },
+  "source" : "ad6e5306b87bb6f3.json",
+  "parameterValues" : [ ]
+}

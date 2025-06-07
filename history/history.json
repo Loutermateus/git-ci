@@ -1,14 +1,23 @@
 {
   "476081d539132dfcd130f046186d34b7" : {
     "statistic" : {
-      "failed" : 2,
+      "failed" : 3,
       "broken" : 0,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 2
+      "total" : 3
     },
     "items" : [ {
+      "uid" : "479922fa5efe167",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: {'code': 401, 'message': 'security requirements failed: authentication failed, please set correct \"Bearer\" header'}",
+      "time" : {
+        "start" : 1749296700705,
+        "stop" : 1749296703015,
+        "duration" : 2310
+      }
+    }, {
       "uid" : "64bd75a22b96ad54",
       "status" : "failed",
       "statusDetails" : "AssertionError: {'code': 401, 'message': 'security requirements failed: authentication failed, please set correct \"Bearer\" header'}",
@@ -30,14 +39,23 @@
   },
   "faa03a9525f65dc8196b32974472b12b" : {
     "statistic" : {
-      "failed" : 2,
+      "failed" : 3,
       "broken" : 0,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 2
+      "total" : 3
     },
     "items" : [ {
+      "uid" : "ad6e5306b87bb6f3",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: {'code': 401, 'message': 'security requirements failed: authentication failed, please set correct \"Bearer\" header'}",
+      "time" : {
+        "start" : 1749296703051,
+        "stop" : 1749296704183,
+        "duration" : 1132
+      }
+    }, {
       "uid" : "25a1c90f0a654980",
       "status" : "failed",
       "statusDetails" : "AssertionError: {'code': 401, 'message': 'security requirements failed: authentication failed, please set correct \"Bearer\" header'}",
@@ -59,14 +77,23 @@
   },
   "2f5547d26dd0edb0cfaa459b2ff67a99" : {
     "statistic" : {
-      "failed" : 2,
+      "failed" : 3,
       "broken" : 0,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 2
+      "total" : 3
     },
     "items" : [ {
+      "uid" : "e06b14cda35c8873",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: {'code': 401, 'message': 'security requirements failed: authentication failed, please set correct \"Bearer\" header'}",
+      "time" : {
+        "start" : 1749296700705,
+        "stop" : 1749296702518,
+        "duration" : 1813
+      }
+    }, {
       "uid" : "5363c84965eb9402",
       "status" : "failed",
       "statusDetails" : "AssertionError: {'code': 401, 'message': 'security requirements failed: authentication failed, please set correct \"Bearer\" header'}",

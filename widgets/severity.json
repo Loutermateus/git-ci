@@ -1,30 +1,30 @@
 [ {
-  "uid" : "64bd75a22b96ad54",
-  "name" : "Find and delete user",
-  "time" : {
-    "start" : 1749296327354,
-    "stop" : 1749296329363,
-    "duration" : 2009
-  },
-  "status" : "failed",
-  "severity" : "normal"
-}, {
-  "uid" : "25a1c90f0a654980",
+  "uid" : "ad6e5306b87bb6f3",
   "name" : "Get list user",
   "time" : {
-    "start" : 1749296329402,
-    "stop" : 1749296330234,
-    "duration" : 832
+    "start" : 1749296703051,
+    "stop" : 1749296704183,
+    "duration" : 1132
   },
   "status" : "failed",
   "severity" : "normal"
 }, {
-  "uid" : "5363c84965eb9402",
+  "uid" : "479922fa5efe167",
+  "name" : "Find and delete user",
+  "time" : {
+    "start" : 1749296700705,
+    "stop" : 1749296703015,
+    "duration" : 2310
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "e06b14cda35c8873",
   "name" : "Delete user",
   "time" : {
-    "start" : 1749296327354,
-    "stop" : 1749296329357,
-    "duration" : 2003
+    "start" : 1749296700705,
+    "stop" : 1749296702518,
+    "duration" : 1813
   },
   "status" : "failed",
   "severity" : "normal"
