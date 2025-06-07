@@ -1,56 +1,56 @@
 {
   "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
   "children" : [ {
-    "name" : "cb426ff55724",
+    "name" : "4a222e4f44a3",
     "children" : [ {
+      "name" : "7-MainThread",
+      "children" : [ {
+        "name" : "Get list user",
+        "uid" : "4030c8fd2dc8ce04",
+        "parentUid" : "8620b73e83281670a2b28d0096c03fa9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1749298044536,
+          "stop" : 1749298045918,
+          "duration" : 1382
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Find and delete user",
+        "uid" : "cfc9c2a13aadac3f",
+        "parentUid" : "8620b73e83281670a2b28d0096c03fa9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1749298042361,
+          "stop" : 1749298044534,
+          "duration" : 2173
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "8620b73e83281670a2b28d0096c03fa9"
+    }, {
       "name" : "10-MainThread",
       "children" : [ {
         "name" : "Delete user",
-        "uid" : "f70cb4af97c4b5c3",
-        "parentUid" : "3a4e07c70583e0288d62ebfe1bda797c",
+        "uid" : "f82e53f5a5d15f87",
+        "parentUid" : "a500de946ec57f3acef3ca558e18729c",
         "status" : "failed",
         "time" : {
-          "start" : 1749297799632,
-          "stop" : 1749297801967,
-          "duration" : 2335
+          "start" : 1749298042362,
+          "stop" : 1749298044206,
+          "duration" : 1844
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "3a4e07c70583e0288d62ebfe1bda797c"
-    }, {
-      "name" : "7-MainThread",
-      "children" : [ {
-        "name" : "Find and delete user",
-        "uid" : "be850f243539291f",
-        "parentUid" : "3724b3a15fea7e3d64795d7d937a53b2",
-        "status" : "failed",
-        "time" : {
-          "start" : 1749297799632,
-          "stop" : 1749297803232,
-          "duration" : 3600
-        },
-        "flaky" : true,
-        "newFailed" : true,
-        "parameters" : [ ]
-      }, {
-        "name" : "Get list user",
-        "uid" : "cdd6c329acba2def",
-        "parentUid" : "3724b3a15fea7e3d64795d7d937a53b2",
-        "status" : "passed",
-        "time" : {
-          "start" : 1749297803269,
-          "stop" : 1749297804433,
-          "duration" : 1164
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "3724b3a15fea7e3d64795d7d937a53b2"
+      "uid" : "a500de946ec57f3acef3ca558e18729c"
     } ],
-    "uid" : "6050c782a8be45ab2e78df3651648527"
+    "uid" : "2c901ae8727fd4150906d4b9ee0c1bdf"
   } ],
   "name" : "timeline"
 }

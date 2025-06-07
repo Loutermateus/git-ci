@@ -1,31 +1,31 @@
 [ {
-  "uid" : "f70cb4af97c4b5c3",
+  "uid" : "f82e53f5a5d15f87",
   "name" : "Delete user",
   "time" : {
-    "start" : 1749297799632,
-    "stop" : 1749297801967,
-    "duration" : 2335
+    "start" : 1749298042362,
+    "stop" : 1749298044206,
+    "duration" : 1844
   },
   "status" : "failed",
   "severity" : "normal"
 }, {
-  "uid" : "cdd6c329acba2def",
+  "uid" : "4030c8fd2dc8ce04",
   "name" : "Get list user",
   "time" : {
-    "start" : 1749297803269,
-    "stop" : 1749297804433,
-    "duration" : 1164
+    "start" : 1749298044536,
+    "stop" : 1749298045918,
+    "duration" : 1382
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "be850f243539291f",
+  "uid" : "cfc9c2a13aadac3f",
   "name" : "Find and delete user",
   "time" : {
-    "start" : 1749297799632,
-    "stop" : 1749297803232,
-    "duration" : 3600
+    "start" : 1749298042361,
+    "stop" : 1749298044534,
+    "duration" : 2173
   },
-  "status" : "failed",
+  "status" : "passed",
   "severity" : "normal"
 } ]

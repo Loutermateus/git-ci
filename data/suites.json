@@ -7,40 +7,40 @@
       "children" : [ {
         "name" : "TestUsers",
         "children" : [ {
-          "name" : "Delete user",
-          "uid" : "f70cb4af97c4b5c3",
+          "name" : "Find and delete user",
+          "uid" : "cfc9c2a13aadac3f",
           "parentUid" : "294a0f2d41d81e4f2480611a6b71f624",
-          "status" : "failed",
+          "status" : "passed",
           "time" : {
-            "start" : 1749297799632,
-            "stop" : 1749297801967,
-            "duration" : 2335
+            "start" : 1749298042361,
+            "stop" : 1749298044534,
+            "duration" : 2173
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
-          "name" : "Find and delete user",
-          "uid" : "be850f243539291f",
+          "name" : "Delete user",
+          "uid" : "f82e53f5a5d15f87",
           "parentUid" : "294a0f2d41d81e4f2480611a6b71f624",
           "status" : "failed",
           "time" : {
-            "start" : 1749297799632,
-            "stop" : 1749297803232,
-            "duration" : 3600
+            "start" : 1749298042362,
+            "stop" : 1749298044206,
+            "duration" : 1844
           },
-          "flaky" : true,
-          "newFailed" : true,
+          "flaky" : false,
+          "newFailed" : false,
           "parameters" : [ ]
         }, {
           "name" : "Get list user",
-          "uid" : "cdd6c329acba2def",
+          "uid" : "4030c8fd2dc8ce04",
           "parentUid" : "294a0f2d41d81e4f2480611a6b71f624",
           "status" : "passed",
           "time" : {
-            "start" : 1749297803269,
-            "stop" : 1749297804433,
-            "duration" : 1164
+            "start" : 1749298044536,
+            "stop" : 1749298045918,
+            "duration" : 1382
           },
           "flaky" : false,
           "newFailed" : false,
