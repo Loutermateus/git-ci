@@ -1,1 +1,31 @@
-[ ]
+[ {
+  "uid" : "3ce61e079bc48abb",
+  "name" : "Delete user",
+  "time" : {
+    "start" : 1749295715104,
+    "stop" : 1749295717620,
+    "duration" : 2516
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "f308b947676e7209",
+  "name" : "Get list user",
+  "time" : {
+    "start" : 1749295717647,
+    "stop" : 1749295718499,
+    "duration" : 852
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "9172ecdc1cbdf4ec",
+  "name" : "Find and delete user",
+  "time" : {
+    "start" : 1749295715104,
+    "stop" : 1749295717609,
+    "duration" : 2505
+  },
+  "status" : "failed",
+  "severity" : "normal"
+} ]

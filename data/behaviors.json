@@ -1,5 +1,48 @@
 {
   "uid" : "b1a8273437954620fa374b796ffaacdd",
-  "children" : [ ],
+  "children" : [ {
+    "name" : "Test User",
+    "children" : [ {
+      "name" : "Delete user",
+      "uid" : "3ce61e079bc48abb",
+      "parentUid" : "fd3a1fab6b87f2c4391acc585f79e608",
+      "status" : "failed",
+      "time" : {
+        "start" : 1749295715104,
+        "stop" : 1749295717620,
+        "duration" : 2516
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Find and delete user",
+      "uid" : "9172ecdc1cbdf4ec",
+      "parentUid" : "fd3a1fab6b87f2c4391acc585f79e608",
+      "status" : "failed",
+      "time" : {
+        "start" : 1749295715104,
+        "stop" : 1749295717609,
+        "duration" : 2505
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Get list user",
+      "uid" : "f308b947676e7209",
+      "parentUid" : "fd3a1fab6b87f2c4391acc585f79e608",
+      "status" : "failed",
+      "time" : {
+        "start" : 1749295717647,
+        "stop" : 1749295718499,
+        "duration" : 852
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "fd3a1fab6b87f2c4391acc585f79e608"
+  } ],
   "name" : "behaviors"
 }
