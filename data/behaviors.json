@@ -4,39 +4,39 @@
     "name" : "Test User",
     "children" : [ {
       "name" : "Find and delete user",
-      "uid" : "479922fa5efe167",
+      "uid" : "11ed7332a9fcee20",
       "parentUid" : "fd3a1fab6b87f2c4391acc585f79e608",
-      "status" : "failed",
+      "status" : "passed",
       "time" : {
-        "start" : 1749296700705,
-        "stop" : 1749296703015,
-        "duration" : 2310
+        "start" : 1749297501288,
+        "stop" : 1749297504429,
+        "duration" : 3141
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Delete user",
-      "uid" : "e06b14cda35c8873",
+      "uid" : "1b53e0541737cef6",
       "parentUid" : "fd3a1fab6b87f2c4391acc585f79e608",
       "status" : "failed",
       "time" : {
-        "start" : 1749296700705,
-        "stop" : 1749296702518,
-        "duration" : 1813
+        "start" : 1749297501288,
+        "stop" : 1749297504317,
+        "duration" : 3029
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Get list user",
-      "uid" : "ad6e5306b87bb6f3",
+      "uid" : "2983a3e9a40cb7e5",
       "parentUid" : "fd3a1fab6b87f2c4391acc585f79e608",
-      "status" : "failed",
+      "status" : "passed",
       "time" : {
-        "start" : 1749296703051,
-        "stop" : 1749296704183,
-        "duration" : 1132
+        "start" : 1749297504432,
+        "stop" : 1749297506260,
+        "duration" : 1828
       },
       "flaky" : false,
       "newFailed" : false,

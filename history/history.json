@@ -4,11 +4,19 @@
       "failed" : 3,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
-      "total" : 3
+      "total" : 4
     },
     "items" : [ {
+      "uid" : "11ed7332a9fcee20",
+      "status" : "passed",
+      "time" : {
+        "start" : 1749297501288,
+        "stop" : 1749297504429,
+        "duration" : 3141
+      }
+    }, {
       "uid" : "479922fa5efe167",
       "status" : "failed",
       "statusDetails" : "AssertionError: {'code': 401, 'message': 'security requirements failed: authentication failed, please set correct \"Bearer\" header'}",
@@ -42,11 +50,19 @@
       "failed" : 3,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
-      "total" : 3
+      "total" : 4
     },
     "items" : [ {
+      "uid" : "2983a3e9a40cb7e5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1749297504432,
+        "stop" : 1749297506260,
+        "duration" : 1828
+      }
+    }, {
       "uid" : "ad6e5306b87bb6f3",
       "status" : "failed",
       "statusDetails" : "AssertionError: {'code': 401, 'message': 'security requirements failed: authentication failed, please set correct \"Bearer\" header'}",
@@ -77,14 +93,23 @@
   },
   "2f5547d26dd0edb0cfaa459b2ff67a99" : {
     "statistic" : {
-      "failed" : 3,
+      "failed" : 4,
       "broken" : 0,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 3
+      "total" : 4
     },
     "items" : [ {
+      "uid" : "1b53e0541737cef6",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: {'code': 422, 'message': 'Users limit is reached: 20'}",
+      "time" : {
+        "start" : 1749297501288,
+        "stop" : 1749297504317,
+        "duration" : 3029
+      }
+    }, {
       "uid" : "e06b14cda35c8873",
       "status" : "failed",
       "statusDetails" : "AssertionError: {'code': 401, 'message': 'security requirements failed: authentication failed, please set correct \"Bearer\" header'}",

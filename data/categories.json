@@ -3,48 +3,22 @@
   "children" : [ {
     "name" : "Product defects",
     "children" : [ {
-      "name" : "AssertionError: {'code': 401, 'message': 'security requirements failed: authentication failed, please set correct \"Bearer\" header'}",
+      "name" : "AssertionError: {'code': 422, 'message': 'Users limit is reached: 20'}",
       "children" : [ {
-        "name" : "Find and delete user",
-        "uid" : "479922fa5efe167",
-        "parentUid" : "37b1c5c214b336f9792100b5858a8303",
-        "status" : "failed",
-        "time" : {
-          "start" : 1749296700705,
-          "stop" : 1749296703015,
-          "duration" : 2310
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
         "name" : "Delete user",
-        "uid" : "e06b14cda35c8873",
-        "parentUid" : "37b1c5c214b336f9792100b5858a8303",
+        "uid" : "1b53e0541737cef6",
+        "parentUid" : "52689743f22154c7c2e7ab6975cb46df",
         "status" : "failed",
         "time" : {
-          "start" : 1749296700705,
-          "stop" : 1749296702518,
-          "duration" : 1813
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Get list user",
-        "uid" : "ad6e5306b87bb6f3",
-        "parentUid" : "37b1c5c214b336f9792100b5858a8303",
-        "status" : "failed",
-        "time" : {
-          "start" : 1749296703051,
-          "stop" : 1749296704183,
-          "duration" : 1132
+          "start" : 1749297501288,
+          "stop" : 1749297504317,
+          "duration" : 3029
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "37b1c5c214b336f9792100b5858a8303"
+      "uid" : "52689743f22154c7c2e7ab6975cb46df"
     } ],
     "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
   } ],
