@@ -52,7 +52,7 @@ jobs:
       - name: Run API tests via Docker
         env:
           STAGE: ${{ secrets.STAGE }}
-          API_TOKEN: ${{ secrets.API_TOKEN }}
+          TOKEN: ${{ secrets.TOKEN }}
           MARKER: ${{ github.event.inputs.MARKER }}
           THREADS: ${{ github.event.inputs.THREADS }}
         run: docker compose up smoke-api-test

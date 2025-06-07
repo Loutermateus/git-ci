@@ -23,6 +23,7 @@ services:
       STAGE: ${STAGE}
       MARKER: ${MARKER:-smoke}
       THREADS: ${THREADS:-2}
+      TOKEN: ${TOKEN}
     tty: true
 
 
@@ -40,6 +41,7 @@ services:
       STAGE: ${STAGE}
       MARKER: ${MARKER:-user}
       THREADS: ${THREADS:-2}
+      TOKEN: ${TOKEN}
     ports:
       - "4444:4444"
     tty: true

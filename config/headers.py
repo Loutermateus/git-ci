@@ -8,9 +8,8 @@ class Headers:
 
 
     basic = {
-        "Authorization": f"Bearer {os.getenv('TOKEN')}",
+        "Authorization": f"Bearer {os.environ.get('TOKEN') or os.getenv('TOKEN')}",
         "X-Task-Id": "API-1"
     }
 
 
-print(Headers.basic)
