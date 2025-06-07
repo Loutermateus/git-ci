@@ -1,5 +1,6 @@
 name: Api test
 run-name: Test ${{ github.event.inputs.ENV }} | ${{ github.event.inputs.MARKER }} marker | ${{ github.event.inputs.THREADS }} threads
+
 on:
   workflow_dispatch:
     inputs:
@@ -32,9 +33,11 @@ jobs:
     environment: ${{ github.event.inputs.ENV }}
 
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout code
+        uses: actions/checkout@v2
 
-      - uses: actions/checkout@v2
+      - name: Checkout gh-pages branch
+        uses: actions/checkout@v2
         with:
           ref: gh-pages
           path: ./.github/gh-pages
@@ -46,9 +49,10 @@ jobs:
           echo "Commit=${{ github.sha }}" >> report/environment.properties
           echo "Environment=${{ github.event.inputs.ENV }}" >> report/environment.properties
 
-      - name: Run Api tests via docker
+      - name: Run API tests via Docker
         env:
           STAGE: ${{ secrets.STAGE }}
+          API_TOKEN: ${{ secrets.API_TOKEN }}
           MARKER: ${{ github.event.inputs.MARKER }}
           THREADS: ${{ github.event.inputs.THREADS }}
         run: docker compose up smoke-api-test
@@ -63,7 +67,7 @@ jobs:
       - name: Generate Allure report
         run: docker compose up report
 
-      - name: Deploy to Github Pages
+      - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.5
         with:
           token: ${{ secrets.CI_TOKEN }}

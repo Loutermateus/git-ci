@@ -1,0 +1,51 @@
+[ {
+  "uid" : "757cc1dcf7f4438a",
+  "name" : "Get list user",
+  "time" : {
+    "start" : 1749289324482,
+    "stop" : 1749289326636,
+    "duration" : 2154
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ca72f52f2a95fa47",
+  "name" : "Find and delete user",
+  "time" : {
+    "start" : 1749289324477,
+    "stop" : 1749289326642,
+    "duration" : 2165
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c83e4db5fc129804",
+  "name" : "Get list user",
+  "time" : {
+    "start" : 1749289324482,
+    "stop" : 1749289326637,
+    "duration" : 2155
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6a958bba540be16",
+  "name" : "Delete user",
+  "time" : {
+    "start" : 1749289324477,
+    "stop" : 1749289326647,
+    "duration" : 2170
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "ff3b44735715f416",
+  "name" : "Get list user",
+  "time" : {
+    "start" : 1749289324477,
+    "stop" : 1749289326645,
+    "duration" : 2168
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

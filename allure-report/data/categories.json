@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: {'code': 422, 'message': 'Users limit is reached: 20'}",
+      "children" : [ {
+        "name" : "Delete user",
+        "uid" : "6a958bba540be16",
+        "parentUid" : "52689743f22154c7c2e7ab6975cb46df",
+        "status" : "failed",
+        "time" : {
+          "start" : 1749289324477,
+          "stop" : 1749289326647,
+          "duration" : 2170
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "52689743f22154c7c2e7ab6975cb46df"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ],
+  "name" : "categories"
+}

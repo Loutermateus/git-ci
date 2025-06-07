@@ -1,0 +1,77 @@
+{
+    "meta": {
+        "total": 20
+    },
+    "users": [
+        {
+            "avatar_url": "",
+            "email": "porternicole@example.org",
+            "name": "Susan Morgan",
+            "nickname": "adamolsen",
+            "uuid": "afb293ae-04d3-4442-8913-6a643b5878ad"
+        },
+        {
+            "avatar_url": "",
+            "email": "cmoreno@example.org",
+            "name": "Kaylee Bowman",
+            "nickname": "annewelch",
+            "uuid": "9df5b076-09ca-41c5-b9a4-912e84f18ec4"
+        },
+        {
+            "avatar_url": "",
+            "email": "jennifer24@example.com",
+            "name": "Diana Bailey",
+            "nickname": "ebaker",
+            "uuid": "8cf0b2c3-7f46-494b-ab8f-2ace38fe2b04"
+        },
+        {
+            "avatar_url": "",
+            "email": "williamdawson@example.org",
+            "name": "Jennifer Peterson",
+            "nickname": "erinmccormick",
+            "uuid": "35f7818a-01f1-4fec-81c4-377b04108bc9"
+        },
+        {
+            "avatar_url": "",
+            "email": "cflores@example.org",
+            "name": "Tara Turner",
+            "nickname": "jerry73",
+            "uuid": "47436ce6-e0de-42c1-b475-008b3380c5dd"
+        },
+        {
+            "avatar_url": "",
+            "email": "melindalowe@example.com",
+            "name": "Jennifer Sanchez",
+            "nickname": "johnwilson",
+            "uuid": "ef37d09e-f712-4655-a070-127dec1ef9a5"
+        },
+        {
+            "avatar_url": "",
+            "email": "chaveznicholas@example.org",
+            "name": "Susan Archer",
+            "nickname": "josephharris",
+            "uuid": "52bac699-aafd-48eb-a644-f99d7c8e1e65"
+        },
+        {
+            "avatar_url": "",
+            "email": "charles63@example.com",
+            "name": "Deborah Olson",
+            "nickname": "karenchan",
+            "uuid": "7fef750c-6925-40cf-bc23-1bed9e812834"
+        },
+        {
+            "avatar_url": "",
+            "email": "epeters@example.net",
+            "name": "Paul Simmons",
+            "nickname": "kevin29",
+            "uuid": "45c7a472-ba35-4f3f-a6ae-f0bcfa80889f"
+        },
+        {
+            "avatar_url": "",
+            "email": "stewartandrew@example.com",
+            "name": "Shannon Williams",
+            "nickname": "kperez",
+            "uuid": "faa5a429-e1ca-43c4-b5b7-71576f352d6c"
+        }
+    ]
+}
