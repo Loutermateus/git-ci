@@ -1,14 +1,23 @@
 {
   "476081d539132dfcd130f046186d34b7" : {
     "statistic" : {
-      "failed" : 3,
+      "failed" : 4,
       "broken" : 0,
       "skipped" : 0,
       "passed" : 1,
       "unknown" : 0,
-      "total" : 4
+      "total" : 5
     },
     "items" : [ {
+      "uid" : "be850f243539291f",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: Failed to delete user with id afb293ae-04d3-4442-8913-6a643b5878ad. Status code: 500",
+      "time" : {
+        "start" : 1749297799632,
+        "stop" : 1749297803232,
+        "duration" : 3600
+      }
+    }, {
       "uid" : "11ed7332a9fcee20",
       "status" : "passed",
       "time" : {
@@ -50,11 +59,19 @@
       "failed" : 3,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 4
+      "total" : 5
     },
     "items" : [ {
+      "uid" : "cdd6c329acba2def",
+      "status" : "passed",
+      "time" : {
+        "start" : 1749297803269,
+        "stop" : 1749297804433,
+        "duration" : 1164
+      }
+    }, {
       "uid" : "2983a3e9a40cb7e5",
       "status" : "passed",
       "time" : {
@@ -93,14 +110,23 @@
   },
   "2f5547d26dd0edb0cfaa459b2ff67a99" : {
     "statistic" : {
-      "failed" : 4,
+      "failed" : 5,
       "broken" : 0,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 4
+      "total" : 5
     },
     "items" : [ {
+      "uid" : "f70cb4af97c4b5c3",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: {'code': 422, 'message': 'Users limit is reached: 20'}",
+      "time" : {
+        "start" : 1749297799632,
+        "stop" : 1749297801967,
+        "duration" : 2335
+      }
+    }, {
       "uid" : "1b53e0541737cef6",
       "status" : "failed",
       "statusDetails" : "AssertionError: {'code': 422, 'message': 'Users limit is reached: 20'}",

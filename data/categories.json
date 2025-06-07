@@ -6,19 +6,36 @@
       "name" : "AssertionError: {'code': 422, 'message': 'Users limit is reached: 20'}",
       "children" : [ {
         "name" : "Delete user",
-        "uid" : "1b53e0541737cef6",
+        "uid" : "f70cb4af97c4b5c3",
         "parentUid" : "52689743f22154c7c2e7ab6975cb46df",
         "status" : "failed",
         "time" : {
-          "start" : 1749297501288,
-          "stop" : 1749297504317,
-          "duration" : 3029
+          "start" : 1749297799632,
+          "stop" : 1749297801967,
+          "duration" : 2335
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
       "uid" : "52689743f22154c7c2e7ab6975cb46df"
+    }, {
+      "name" : "AssertionError: Failed to delete user with id afb293ae-04d3-4442-8913-6a643b5878ad. Status code: 500",
+      "children" : [ {
+        "name" : "Find and delete user",
+        "uid" : "be850f243539291f",
+        "parentUid" : "cad0a9cd00a86e56aef91bd9a8b0894f",
+        "status" : "failed",
+        "time" : {
+          "start" : 1749297799632,
+          "stop" : 1749297803232,
+          "duration" : 3600
+        },
+        "flaky" : true,
+        "newFailed" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "cad0a9cd00a86e56aef91bd9a8b0894f"
     } ],
     "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
   } ],
