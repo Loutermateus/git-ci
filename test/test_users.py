@@ -12,7 +12,7 @@ class TestUsers(BaseTest):
         # user = self.users_api.create_user()
         # self.users_api.delete_user_by_id(user.uuid)
         self.users_api.get_list_all_users()
-        # self.users_api.delete_user_by_id("ce5b7e0f-d4b3-4a01-841d-071acea13f2e")
+        self.users_api.delete_user_by_id("afb293ae-04d3-4442-8913-6a643b5878ad")
 
     @pytest.mark.smoke
     @allure.title("Delete user")
