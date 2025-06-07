@@ -1,0 +1,55 @@
+
+
+# STAGE=dev docker compose up             --------- run all containers
+# STAGE=dev docker compose up {name_container} -------- run only {name_container}
+# STAGE=dev docker compose up -d             ---------- run all containers in background mode
+# docker compose down                     ------------- delete all containers
+# docker compose restart                  -------------- restart run container which was run before
+# docker compose restart {name_container}  ------------- restart only this container
+
+services:
+
+  smoke-api-test:
+    image: api:0.1
+    build:
+      context: .
+      dockerfile: Dockerfile
+    shm_size: 2gb
+    volumes:
+      - ./:/usr/workspace
+      - /dev/shm:/dev/shm   #--------- add memory to docker from local computer
+    command: /bin/sh -c "STAGE=$$STAGE pytest -sv -o log_cli=true --alluredir=report -m=$$MARKER -n=$$THREADS"
+    environment:
+      STAGE: ${STAGE}
+      MARKER: ${MARKER:-smoke}
+      THREADS: ${THREADS:-2}
+    tty: true
+
+
+  user-api-test:
+    image: api:0.1
+    build:
+      context: .
+      dockerfile: Dockerfile
+    shm_size: 2gb
+    volumes:
+      - ./:/usr/workspace
+      - /dev/shm:/dev/shm
+    command: /bin/sh -c "STAGE=$$STAGE pytest -sv -o log_cli=true --alluredir=report -m=$$MARKER -n=$$THREADS"
+    environment:
+      STAGE: ${STAGE}
+      MARKER: ${MARKER:-user}
+      THREADS: ${THREADS:-2}
+    ports:
+      - "4444:4444"
+    tty: true
+
+  report:
+    image: api:0.1
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./:/usr/workspace
+    command: /bin/sh -c "ls -la && allure generate report --clean -o allure-report"
+    working_dir: /usr/workspace
