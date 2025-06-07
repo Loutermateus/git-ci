@@ -12,13 +12,13 @@ class TestUsers(BaseTest):
         # user = self.users_api.create_user()
         # self.users_api.delete_user_by_id(user.uuid)
         self.users_api.get_list_all_users()
-        self.users_api.delete_user_by_id("afb293ae-04d3-4442-8913-6a643b5878ad")
+
 
     @pytest.mark.smoke
     @allure.title("Delete user")
     def test_user_0(self):
-        user = self.users_api.create_user()
-        self.users_api.delete_user_by_id(user.uuid)
+        user_id = "afb293ae-04d3-4442-8913-6a643b5878ad"
+        self.users_api.delete_user_by_id(user_id)
 
     @pytest.mark.smoke
     @allure.title("Get list user")
