@@ -1,4 +1,4 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"failed","Sat Jun 07 11:28:35 GMT 2025","Sat Jun 07 11:28:37 GMT 2025","2516","test","test_users","TestUsers","","","Delete user",""
-"failed","Sat Jun 07 11:28:37 GMT 2025","Sat Jun 07 11:28:38 GMT 2025","852","test","test_users","TestUsers","","","Get list user",""
-"failed","Sat Jun 07 11:28:35 GMT 2025","Sat Jun 07 11:28:37 GMT 2025","2505","test","test_users","TestUsers","","","Find and delete user",""
+"failed","Sat Jun 07 11:38:49 GMT 2025","Sat Jun 07 11:38:50 GMT 2025","832","test","test_users","TestUsers","","","Get list user",""
+"failed","Sat Jun 07 11:38:47 GMT 2025","Sat Jun 07 11:38:49 GMT 2025","2003","test","test_users","TestUsers","","","Delete user",""
+"failed","Sat Jun 07 11:38:47 GMT 2025","Sat Jun 07 11:38:49 GMT 2025","2009","test","test_users","TestUsers","","","Find and delete user",""
