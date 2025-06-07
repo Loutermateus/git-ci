@@ -1,5 +1,5 @@
 name: Api test
-run-name: Test ${{ github.event.inputs.STAGE }} | ${{ github.event.inputs.MARKER }} marker| ${{ github.event.inputs.THREADS }} threads
+run-name: Test ${{ github.event.inputs.ENV }} | ${{ github.event.inputs.MARKER }} marker | ${{ github.event.inputs.THREADS }} threads
 on:
   workflow_dispatch:
     inputs:
@@ -17,18 +17,19 @@ on:
           - smoke
           - user
 
-      THEARDS:
-        description: "Select pytest markers"
+      THREADS:
+        description: "Select number of threads"
         required: false
         default: "1"
         type: choice
         options:
           - "2"
           - "4"
+
 jobs:
   api-tests:
-    runs-on: ubuntu:latest
-    environment: ${{ inputs.ENV }}
+    runs-on: ubuntu-latest
+    environment: ${{ github.event.inputs.ENV }}
 
     steps:
       - uses: actions/checkout@v2
@@ -43,11 +44,14 @@ jobs:
           mkdir -p report
           echo "Branch=${{ github.ref_name }}" > report/environment.properties
           echo "Commit=${{ github.sha }}" >> report/environment.properties
-          echo "Environments=${{ inputs.ENV }}" >> report/environment.properties
+          echo "Environment=${{ github.event.inputs.ENV }}" >> report/environment.properties
+
       - name: Run Api tests via docker
         env:
           STAGE: ${{ secrets.STAGE }}
-        run: docker compose test
+          MARKER: ${{ github.event.inputs.MARKER }}
+          THREADS: ${{ github.event.inputs.THREADS }}
+        run: docker compose up smoke-api-test
 
       - name: Copy Allure history
         run: |
@@ -57,8 +61,7 @@ jobs:
           fi
 
       - name: Generate Allure report
-        run:
-          docker compose up report
+        run: docker compose up report
 
       - name: Deploy to Github Pages
         uses: JamesIves/github-pages-deploy-action@4.1.5
@@ -67,6 +70,3 @@ jobs:
           branch: gh-pages
           folder: allure-report
           clean: false
-
-
-
