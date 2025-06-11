@@ -6,13 +6,13 @@
       "name" : "AssertionError: Failed to delete user with id afb293ae-04d3-4442-8913-6a643b5878ad. Status code: 500",
       "children" : [ {
         "name" : "Delete user",
-        "uid" : "f82e53f5a5d15f87",
+        "uid" : "cf295b1ce4a75565",
         "parentUid" : "cad0a9cd00a86e56aef91bd9a8b0894f",
         "status" : "failed",
         "time" : {
-          "start" : 1749298042362,
-          "stop" : 1749298044206,
-          "duration" : 1844
+          "start" : 1749601804257,
+          "stop" : 1749601807801,
+          "duration" : 3544
         },
         "flaky" : false,
         "newFailed" : false,
